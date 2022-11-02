@@ -1,0 +1,314 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Wed Nov 02 2022 15:47:15 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="630477108a1e12e537369e1d" data-wf-site="63021be5b0ee910c66f8f4b1">
+<head>
+  <meta charset="utf-8">
+  <title>Svelte Xano API File System</title>
+  <meta content="API / Vanilla Compile Strategies. Native Enterprise friendly Vanilla Compiles. Client and Server setup. YSL150. Yoonsun Lee" name="description">
+  <meta content="Svelte Xano API File System" property="og:title">
+  <meta content="API / Vanilla Compile Strategies. Native Enterprise friendly Vanilla Compiles. Client and Server setup. YSL150. Yoonsun Lee" property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/63021be5b0ee910c66f8f4b1/63426bf122ea7124dc33e4fe_Screen%20Shot%202022-10-09%20at%202.24.12%20AM.png" property="og:image">
+  <meta content="Svelte Xano API File System" property="twitter:title">
+  <meta content="API / Vanilla Compile Strategies. Native Enterprise friendly Vanilla Compiles. Client and Server setup. YSL150. Yoonsun Lee" property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/63021be5b0ee910c66f8f4b1/63426bf122ea7124dc33e4fe_Screen%20Shot%202022-10-09%20at%202.24.12%20AM.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/techblog-ysl.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inconsolata:400,700","Inter:100,200,300,regular,500,600"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.jpg" rel="apple-touch-icon">
+  <style>
+iframe {
+width: 100%;
+height: 100%;
+border-width: 2px;
+border-style: inset;
+border-color: initial;
+border-image: initial;
+border: 0;
+transform-origin: 0 0;
+background-color: white;
+border: none;
+}
+* {
+box-sizing: border-box;
+}
+</style>
+</head>
+<body class="body">
+  <div class="nav">
+    <nav class="fs-menu">
+      <div class="fs-nav-item-wrapper">
+        <a href="old-home.html" class="link-2">Vanilla Design for Enterprise Development</a>
+        <a href="forms-and-validation.html" class="link-2">Forms</a>
+        <a href="unity.html" class="link-2">Unity</a>
+        <a href="svelte-xano-api.html" aria-current="page" class="link-2 w--current">Svelte and Xano API Strategy</a>
+        <a href="astro-11ty-ruby-on-rails.html" class="link-2">Astro / 11ty</a>
+        <a href="web-3.html" class="link-2">Web 3 Resources</a>
+        <a href="figma-to-design.html" class="link-2">Figma to Design Handoff</a>
+        <a href="animation-stacks.html" class="link-2">Animation Resources</a>
+      </div>
+      <div class="fs-photo-wrapper">
+        <div class="contact">
+          <a href="https://www.ysl150.com/" target="_blank" class="link-2">Portfolio</a>
+          <a href="mailto:yoonsunlee150@gmail.com?subject=hello" class="link-2">email </a>
+          <a href="tel:9175879628" class="link-2">phone</a>
+        </div>
+      </div>
+    </nav>
+    <div data-w-id="faf4b479-e152-55e0-3879-37b2b2fbd8f7" class="fs-menu-toggle">
+      <div data-is-ix2-target="1" class="fs-menu-lottie" data-w-id="faf4b479-e152-55e0-3879-37b2b2fbd8f8" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6304d7f24d3c3eef57a7d798/6304d7f24d3c3eef86a7d7ac_lf30_editor_kcsdbiyp.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2" data-duration="0" data-ix2-initial-state="0"></div>
+    </div>
+  </div>
+  <div class="content _50btm top100"></div>
+  <div class="linefull">
+    <div class="content">
+      <h2 class="smallsubhead">Svelte</h2>
+      <div class="content">
+        <div class="regulartext">Svelte is a compiling method that effciently consolidates functions/animation/UX with easy to use code.<br>The result is a very fast shipping code that is easily rendered, without overhead of a library and dependency.</div>
+        <div class="contentsection">
+          <h4 class="regulartext"><strong>Core Concepts</strong></h4>
+          <div class="regulartext"><strong>Variables</strong></div>
+          <div class="regulartext">Use the variable in regular HTML for Declarative Modeling.</div>
+          <div class="imagewrap noborder _50btm"><img src="images/Screen-Shot-2022-10-04-at-4.47.24-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-04-at-4.47.24-AM-p-500.png 500w, images/Screen-Shot-2022-10-04-at-4.47.24-AM.png 758w" sizes="81vw" alt="Svelte Variable" class="_10btm"><img src="images/Screen-Shot-2022-10-04-at-4.47.34-AM.png" loading="lazy" alt="Svelte Variable Code"></div>
+          <div class="regulartext"><strong>Events</strong></div>
+          <div class="regulartext">Use Local/Nested/Fowarded events with hierarchy in File Tree Publishing</div>
+          <div class="imagewrap noborder _50btm"><img src="images/Screen-Shot-2022-10-04-at-4.54.19-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-04-at-4.54.19-AM-p-500.png 500w, images/Screen-Shot-2022-10-04-at-4.54.19-AM-p-800.png 800w, images/Screen-Shot-2022-10-04-at-4.54.19-AM.png 942w" sizes="81vw" alt="Svelte Variable Code"></div>
+          <div class="regulartext"><strong>Loops</strong></div>
+          <div class="imagewrap noborder _50btm"><img src="images/Screen-Shot-2022-10-04-at-5.10.20-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-04-at-5.10.20-AM-p-500.png 500w, images/Screen-Shot-2022-10-04-at-5.10.20-AM-p-800.png 800w, images/Screen-Shot-2022-10-04-at-5.10.20-AM-p-1080.png 1080w, images/Screen-Shot-2022-10-04-at-5.10.20-AM.png 1504w" sizes="(max-width: 1856px) 81vw, 1504px" alt="Svelte Each Loop"></div>
+        </div>
+        <div class="contentsection">
+          <h4 class="regulartext"><strong>Svelte Animation</strong></h4>
+          <div class="imagewrap noborder _50btm"><img src="images/Screen-Shot-2022-10-04-at-5.15.25-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-04-at-5.15.25-AM-p-500.png 500w, images/Screen-Shot-2022-10-04-at-5.15.25-AM-p-800.png 800w, images/Screen-Shot-2022-10-04-at-5.15.25-AM-p-1080.png 1080w, images/Screen-Shot-2022-10-04-at-5.15.25-AM.png 1376w" sizes="(max-width: 1698px) 81vw, 1376px" alt="Svelte Each Loop Modifier"></div>
+          <ul role="list" class="w-list-unstyled">
+            <li>
+              <div class="regularlist nodeco">Fade - opacity 0-1<br>Blur - opacity and blur<br>Fly - x and y along with opacity<br>Slide - heightScale - start: scale, opacity<br>Draw - SVG Clipping on spline</div>
+              <h4 class="regulartext">Animation also supports: 3D/Canvas, SVG,  Vanilla CSS without need to State Manage, does not rely on DOM mount and unmount. Is Semantic and WCAG Accessible.</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <a href="https://svelte.dev/examples/hello-world" target="_blank" class="button w-button">Svelte Examples</a>
+      </div>
+    </div>
+  </div>
+  <div class="linefull">
+    <div class="content">
+      <h2 class="smallsubhead">Svelte and Three JS</h2>
+      <div class="content">
+        <div class="regulartext">Svelte and interactive three js library with html based button and physics.</div>
+        <div class="regulartext">Create Vite app/select Svelte. Example use case: Digital Twin and IP Model for Power over the Internet Machine triggers.</div>
+        <a href="https://vitejs.dev/guide/#trying-vite-online" target="_blank" class="button _10btm w-button">Vite</a>
+        <div class="regulartext">npm install threlte<br><br>npm install @threlte/core @threlte/extras three</div>
+        <div class="iframewrap _50btm">
+          <div class="html-page-frame w-embed w-iframe"><iframe width="100%" height="315" src="https://threlte-threejs-svelte.netlify.app/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+        </div>
+        <div>
+          <a href="https://github.com/persephonepunch/threltedev" target="_blank" class="button btn-right w-button">Github Sample</a>
+          <a href="https://threlte.xyz/getting-started" target="_blank" class="button w-button">Threlte Install</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="linefull">
+    <div class="content">
+      <h2 class="smallsubhead">Svelte Kit</h2>
+      <div class="content">
+        <div class="regulartext">Svelte does not have a Router and does not render on Server Side.<br>Svelte Kit is a File System with Multi Page Application/Naming Tree.</div>
+        <div class="regulartext">Recent breaking changes to File System/Naming/Loading.</div>
+        <div class="regulartext">Svelte Kit is a beta release.</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="parcel wf-section">
+      <div class="div-block"><img src="images/cheatsheetmaster.jpg" loading="lazy" srcset="images/cheatsheetmaster-p-500.jpg 500w, images/cheatsheetmaster-p-800.jpg 800w, images/cheatsheetmaster-p-1080.jpg 1080w, images/cheatsheetmaster-p-1600.jpg 1600w, images/cheatsheetmaster-p-2000.jpg 2000w, images/cheatsheetmaster-p-2600.jpg 2600w, images/cheatsheetmaster.jpg 2900w" alt="YSL - Native Vanilla Compile Enterprise Builds" sizes="100vw" class="image"></div>
+      <div class="content">
+        <h1 class="heading">Svelte</h1>
+        <h2 class="h2 _50btm">Breaking Changes</h2>
+        <div class="media">
+          <div style="padding-top:56.17021276595745%" class="w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FOUGn7VifUCg%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOUGn7VifUCg&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FOUGn7VifUCg%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube" scrolling="no" allowfullscreen="" title="Major Svelte Kit API Change - Fixing `load`, and tightening up SvelteKit's design before 1.0"></iframe></div>
+        </div>
+        <div class="text-block"><strong>File System / Naming Convention updates before 1.0 Release</strong><br>‍<br><strong>Prefixs have been updated to make the logic simpler</strong><br>-legibility improvements<br>-files are organized into more functional groupings<br>‍<br></div>
+        <div class="button-wrapper">
+          <a href="https://github.com/sveltejs/kit/discussions/5748" target="_blank" class="button w-button">link to article</a>
+        </div>
+      </div>
+    </div>
+    <div class="regulartext"><strong>Svelte File System</strong></div>
+    <div class="imagewrap _50btm wf-section"><img src="images/Screen-Shot-2022-08-23-at-2.53.22-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-08-23-at-2.53.22-AM-p-500.png 500w, images/Screen-Shot-2022-08-23-at-2.53.22-AM-p-800.png 800w, images/Screen-Shot-2022-08-23-at-2.53.22-AM-p-1080.png 1080w, images/Screen-Shot-2022-08-23-at-2.53.22-AM.png 1238w" alt="Sveltekit updates" sizes="(max-width: 1238px) 100vw, 1238px"></div>
+    <div>
+      <div class="content">
+        <h1 class="heading">Skeleton</h1>
+        <h2 class="h2">getting started</h2>
+        <div class="text-block"><strong>npm init svelte@next [nameofyourproject]<br>‍</strong>‍<br><strong>Follow stepped choices</strong><br>Skeleton Project<br>No Typescript<br>ES Lint<br>Prettier<br><br>cd <strong>[nameofyourproject]<br><br>npm install<br>‍</strong><br></div>
+        <div class="imagewrap _50btm noborder"><img src="images/Screen-Shot-2022-08-23-at-3.48.29-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-08-23-at-3.48.29-AM-p-500.png 500w, images/Screen-Shot-2022-08-23-at-3.48.29-AM-p-800.png 800w, images/Screen-Shot-2022-08-23-at-3.48.29-AM-p-1080.png 1080w, images/Screen-Shot-2022-08-23-at-3.48.29-AM-p-1600.png 1600w, images/Screen-Shot-2022-08-23-at-3.48.29-AM.png 1614w" alt="Sveltekit " sizes="(max-width: 1793px) 90vw, 1614px"></div>
+        <div class="button-wrapper"></div>
+      </div>
+    </div>
+  </div>
+  <div class="_50btm wf-section">
+    <div class="content link _50btm">
+      <h2 class="h2">SVelte UI Kits</h2>
+      <a href="https://medium.com/mkdir-awesome/8-popular-svelte-ui-components-d2a3e43d70c3#db83" class="w-inline-block">
+        <div class="link">https://medium.com/mkdir-awesome/8-popular-svelte-ui-components-d2a3e43d70c3#db83</div>
+      </a>
+    </div>
+    <div class="content link">
+      <div>
+        <div class="regulartext _50btm">Advantages of Svelte over React</div>
+        <ul id="Svelte-vs.-React" role="list" class="regularlist _50btm">
+          <li class="regularlist">You can use regular CSS</li>
+          <li>
+            <div class="regularlist">You don&#x27;t need to add &quot;extras&quot;: <a href="https://reactjs.org/docs/hooks-reference.html#usestate" class="linkgrey">useState, </a>
+              <a href="https://reactjs.org/docs/hooks-reference.html#useeffect" class="linkgrey">useEffect, </a>
+              <a href="https://reactjs.org/docs/hooks-reference.html#usecontext" class="linkgrey">useContext</a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">You can Semantically declare <strong class="linkgrey">Elements</strong> with <strong class="linkgrey">Scoped</strong> CSS: Nav, Body, Section, Image, List, etc... these are natively ADA compliant<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">Context and Nested Templates can automate Usability and Functions, manage token based (PCI and HIPAA) integration to Web 3 Wallets and to API first E Commerce APIs, Inventory Management, Returns and Real Time CRM integrations.<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">Server Side Data can be modeled in File System or with Async Vanilla Fetch<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">CSS is Scoped by default, and Sass/Tailwind can be added simply to File System<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">Forms are native and use regular Crud Operations, Handle Error, Success, Received with UI and Redirects<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">Gated and oAuth protected routes can be dynamically set<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">File Based Routing and Architecture / Natural Organization without knowing how to &quot;code&quot;<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+          <li class="regularlist">
+            <div class="regularlist">Watch and State Moderation / Webhooks can be managed per collection, html, svg, css, div, section, js. Workflow is element based.<a href="https://reactjs.org/docs/hooks-reference.html#usecontext"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content"></div>
+  </div>
+  <div class="_50btm wf-section">
+    <div class="content _50btm">
+      <h1> </h1>
+      <div>
+        <h1 class="heading _10btm">Loading Data</h1>
+      </div>
+      <div class="iframewrap _50btm">
+        <div class="html-page-frame w-embed w-iframe"><iframe sandbox="allow-scripts allow-same-origin" src="https://www.youtube.com/embed/EQy-AYhZIlE" class="iframe"></iframe></div>
+      </div>
+      <div class="iframewrap hidden">
+        <div class="html-page-frame w-embed w-iframe"><iframe sandbox="allow-scripts allow-same-origin" src="https://www.youtube.com/embed/dvPfmcGtmrI" class="iframe"></iframe></div>
+      </div>
+      <div class="regulartext">FETCH/ASYNC IS BUILT IN AS A NATIVE COMMAND</div>
+      <div class="regulartext">File System and Client/Server specification Data Loading is part of Svelte Kit Logic / File Naming Structure</div>
+      <div class="image-wrapper"><img src="images/Screen-Shot-2022-10-09-at-2.15.59-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-09-at-2.15.59-AM-p-500.png 500w, images/Screen-Shot-2022-10-09-at-2.15.59-AM-p-800.png 800w, images/Screen-Shot-2022-10-09-at-2.15.59-AM.png 992w" sizes="90vw" alt="Svelte Fetch Data Load"></div>
+    </div>
+  </div>
+  <div class="wf-section">
+    <div class="linefull _50btm">
+      <div class="content">
+        <h2 class="smallsubhead">Xano</h2>
+        <div class="content">
+          <div class="regulartext">Xano is a serverless DATA modeling API endpoint.<br><br>It is a headless &quot;database&quot; and API, with ability to Function Model with logic and &quot;store&quot; data with mutations, logic, and calcuation at an IP endpoint, that is not dependent on Cloud or database, and fees associated with transformation / upload to centralized database. <br><br>Xano is &quot;Serverless&quot; Database substitution, can be used as &quot;middleware&quot;,  temporary storage, logic gating, webhook and strategy warehouse.<br><br>&quot;Users&quot; Collection can mirror ERP/Sales User IDs and or replace, CRM/ERP, bridge E Com to Marketing Data (with real time synchronization, or chron time and logic based data hooks/transfer logic.</div>
+          <div class="regulartext">Similar to a PIM, ERP, WMS, Inventory manager, it can be set up to replace any of these functions.<br><br>The fee/function and serving cost of a XANO database is &quot;included&quot; in an Enterprise friendly single fee. All data is stored at IP making it more secure than a standard database. Logic and Deployment can include Horizontal Scaling, Geo Fencing, Personalized Gating. Comparison Case Study: AWS/Graph CMS and Headless PIM cost to serve: $30,000 a month for 30,000 rows/records and 90 Gig of storage. Conversion to Xano/unlimited APIs and background task with horizontal scaling/and GIT based webhooks for faster JS compile/serving and client side services $200 a month. Fee is not based on size of data. Unlimited APIs and Functions can be scaled with unlimited models to SSL secure frontends supported and webhooked on Netlify/Vercel - free ledger based deployment with GIT version management.<br><br>Usage can be in tandem or as a &quot;replacement&#x27; to a standalone database.<br><br>CSV files can be loaded into a Schema and or &quot;webhooked&quot; to synchronize with data with Edge/Functions and Conditional Logic.<br><br>Xano can be used at API or Provision to an on Prem Enterprise Data source. It is PCI/ACID vetted, HIPAA and Crypto Compliant. This is done without any capital costs and data can horizontally scale to multiple channels immediately. These Channel Managers can include middleware connection between CGI/Inventory/E Com/ERP/EDI/PIM/Ledgers with version control in REAL TIME, at minimal cost.<br><br>Data is unlimited, scales in real time, and packages include API loads with &quot;Background Functions&quot; at interval pushes to rate limited Data Streams.</div>
+          <div class="button-wrapper">
+            <a href="https://www.xano.com/security/" target="_blank" class="button w-button">PCI/HIPAA/ISO Security</a>
+          </div>
+          <div class="regulartext">SAMPLE PIM SCHEMA MAP</div>
+          <div><img src="images/Screen-Shot-2022-10-09-at-2.24.12-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-09-at-2.24.12-AM-p-500.png 500w, images/Screen-Shot-2022-10-09-at-2.24.12-AM-p-800.png 800w, images/Screen-Shot-2022-10-09-at-2.24.12-AM-p-1080.png 1080w, images/Screen-Shot-2022-10-09-at-2.24.12-AM-p-1600.png 1600w, images/Screen-Shot-2022-10-09-at-2.24.12-AM-p-2000.png 2000w, images/Screen-Shot-2022-10-09-at-2.24.12-AM.png 2030w" sizes="(max-width: 2506px) 81vw, 2030px" alt="XANO PIM Schema" class="_50btm">
+            <div class="regulartext">API ENDPOINT (URL-CAN BE A CURL WITH TOKEN HEADER ENTITLEMENT)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="image-wrapper _50btm"><img src="images/Screen-Shot-2022-10-09-at-2.25.36-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-09-at-2.25.36-AM-p-500.png 500w, images/Screen-Shot-2022-10-09-at-2.25.36-AM-p-800.png 800w, images/Screen-Shot-2022-10-09-at-2.25.36-AM.png 1038w" sizes="(max-width: 1038px) 100vw, 1038px" alt="XANO PIM Schema API"></div>
+  <div class="regulartext">Functions are Declarative and not dependent on State Trees. Cache and Data Logic can be &quot;Reasoned&quot; without compile dependency.</div>
+  <div class="image-wrapper _50btm"><img src="images/CleanShot-2021-08-31-at-15.53.55.png" loading="lazy" alt="XANO Functions">
+    <div class="image-wrapper _50btm"><img src="images/Screen-Shot-2022-10-14-at-2.57.18-PM.png" loading="lazy" id="w-node-fa8b188d-0cc0-3f1a-e07d-17c9ee76f390-37369e1d" alt="XANO Functions">
+      <div id="w-node-_4216ed83-a297-aae8-b6b1-7b3915c12387-37369e1d"><img src="images/Screen-Shot-2022-10-14-at-3.13.11-PM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-14-at-3.13.11-PM-p-500.png 500w, images/Screen-Shot-2022-10-14-at-3.13.11-PM.png 544w" sizes="(max-width: 544px) 100vw, (max-width: 767px) 544px, (max-width: 991px) 71vw, 44vw" alt=""></div>
+    </div>
+  </div>
+  <div class="section-bottom">
+    <div class="content">
+      <div class="regulartext center">ADD FUNCTIONS/GATING TO GRAPHQL QUERY/STORE WITH LOGIC LINKED GIT BASED WEBHOOKS<br><br>&quot;State&quot; and &quot;Store&quot; are Declarative HTML/Functions with regular client/server calls: Create, Get, Post, Delete, Replace. &quot;Mutations&quot;, &quot;Render&quot;, &quot;Cache&quot;, are simply done with Vanilla execution and can align with Native Svelte idioms.<br><br>Return API fetches to static rendered &quot;front end&quot; with higher order context and order of operations built with logical build steps and UI States. Render with non destructive GIT based file / naming updates.</div>
+      <div class="image-wrapper _50btm"><img src="images/Screen-Shot-2022-10-17-at-10.01.03-AM.png" loading="lazy" id="w-node-ed24d463-58c6-3762-6392-f624f90a03b9-37369e1d" srcset="images/Screen-Shot-2022-10-17-at-10.01.03-AM-p-500.png 500w, images/Screen-Shot-2022-10-17-at-10.01.03-AM.png 548w" alt="Mutation in Xano" sizes="(max-width: 608px) 90vw, 548px">
+        <div id="w-node-ed24d463-58c6-3762-6392-f624f90a03ba-37369e1d"><img src="images/Screen-Shot-2022-10-17-at-10.02.56-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-17-at-10.02.56-AM-p-500.png 500w, images/Screen-Shot-2022-10-17-at-10.02.56-AM-p-800.png 800w, images/Screen-Shot-2022-10-17-at-10.02.56-AM.png 834w" alt="Visual Schema Tree" sizes="(max-width: 926px) 90vw, (max-width: 991px) 834px, 52vw"></div>
+      </div>
+      <div class="iframewrap _50btm">
+        <div class="html-page-frame w-embed w-iframe"><iframe sandbox="allow-scripts allow-same-origin" src="https://www.youtube.com/embed/n_uXzLN-ctc" class="iframe"></iframe></div>
+      </div>
+      <div></div>
+      <div class="regulartext center">ADDITIONAL SCHEMA/RELATIONAL ENDPOINTS</div>
+      <div class="regulartext left">Additional Data Management can be &quot;reasoned about&quot; and functions can serve in synchronization or on a schedule, without breaking or compromising security of &quot;live database&quot;. Token secure exchanges can be managed with simple Front End Low Code Tools and File Systems (11ty, Astro, Svelte, Webflow - with API synched publishes). Webflow Forms have &quot;state, regex, and validation&quot; built in, with ADA compliance tree shaking and code linting and evaluation at composition, no need for plugins and higher order context hoisting.<br><br><br>‍<br><br>Free to use, instant setup, equal to greater security as Salesforce-Integrated Demandware, Marketing, Sales APIs/AEM/SAP. Scales, with SSL and Background Task Moderation.<br>‍<br><br>CAN BE ADDED ENHANCED AND UPDATED IN REAL TIME, OR ON A SCHEDULE. Logic and schedule are easily managed with WYSWYG tools.<br><br>Scales horizontally, with easy to manage functional and logic settings. Editor and Data can be accessed with role based row level security.<br><br><br>Cost and Fee to Serve and Maintain Data is a single all in 1 cost. Compared to Cloud Based Fees that are designed around amount of data exchanged. <br><br><br>‍<br><br><br></div>
+      <div class="regulartext left"><strong>Efficiency and Enterprise Friendly Pricing make this a &quot;no brainer&quot;, when evaluating Enterprise Grade Cost and Requirements. All endpoints are SSL and Token secure.</strong></div>
+    </div>
+  </div>
+  <div class="wf-section">
+    <div class="linefull _50btm">
+      <div class="content _100btm">
+        <h2 class="smallsubhead">Svelte Kit Params</h2>
+        <div class="content">
+          <div class="regulartext">File naming and Folder Structure define Collection Naming and Dynamic UI/UX publishing in real time.</div>
+          <div class="regulartext">Load API endpoint to Svelte File System. Use Xano URL/with Logic Gating/Secure Keys in Xano. Publish &quot;Stacks&quot; of GIT enabled Ledger and Version to Deployment and logic enabled UX structures. <br><br>Publish with GEO/Language preferences at &quot;Edge&quot; and Global Scaling.<br><br>Can include APIs: Weglot, Stripe/Payment Gateway, Magic Link/oAuth, Wallet Enabled Identification/Entitlement. Wordpress, SAP, Drupal GraphQL REST can also be used as a Data Source that updates in real time.</div>
+          <div class="iframewrap _50btm">
+            <div class="html-page-frame w-embed w-iframe"><iframe sandbox="allow-scripts allow-same-origin" src="https://www.youtube.com/embed/gNgQFF-tmuo" class="iframe"></iframe></div>
+          </div>
+          <div>
+            <div class="regulartext center">Declare Vairiables, and use Declaratively</div>
+            <div class="image-wrapper _100btm"><img src="images/Screen-Shot-2022-10-10-at-10.27.30-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-10-at-10.27.30-AM-p-500.png 500w, images/Screen-Shot-2022-10-10-at-10.27.30-AM-p-800.png 800w, images/Screen-Shot-2022-10-10-at-10.27.30-AM-p-1080.png 1080w, images/Screen-Shot-2022-10-10-at-10.27.30-AM.png 1122w" sizes="(max-width: 1385px) 81vw, 1122px" alt="Declarative Svelte"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wf-section">
+    <div class="linefull _50btm">
+      <div class="content">
+        <h2 class="smallsubhead">Edge Computing</h2>
+        <div class="content">
+          <div class="regulartext">New Paradigm in Deployment and Usability Standards. <br><br>A quick definition is: &quot;is any type of <a href="https://en.wikipedia.org/wiki/Computer_program">computer program</a> that delivers low latency <a href="https://en.wikipedia.org/wiki/Locality_of_reference">nearer to the requests</a>.&quot;<br><br>Deployment with CI CD Scaling and IP endpoint logic, creates a new opportunity with Strategy and Functional Requirements.<br><br>Database, File System, should be Decentralized. Efficient Fast Static Data that is streamlined and &quot;minified&quot; with logic based compiles.<br>‍</div>
+          <div class="image-wrapper _100btm"><img src="images/Edge_computing_infrastructure.png" loading="lazy" srcset="images/Edge_computing_infrastructure-p-500.png 500w, images/Edge_computing_infrastructure.png 554w" sizes="(max-width: 683px) 81vw, 554px" alt=""></div>
+          <div class="button-wrapper">
+            <a href="https://en.wikipedia.org/wiki/Edge_computing" target="_blank" class="button w-button">Edge Computing Wiki</a>
+          </div>
+          <div class="button-wrapper">
+            <a href="https://www.netlify.com/blog/announcing-serverless-compute-with-edge-functions/" target="_blank" class="button rightpad w-button">Edge Functions Netlify</a>
+            <a href="https://nextjs.org/docs/api-reference/edge-runtime" target="_blank" class="button rightpad w-button">Vercel Edge Runtime</a>
+          </div><img src="images/Screen-Shot-2022-10-11-at-7.06.45-AM.png" loading="lazy" srcset="images/Screen-Shot-2022-10-11-at-7.06.45-AM-p-500.png 500w, images/Screen-Shot-2022-10-11-at-7.06.45-AM-p-800.png 800w, images/Screen-Shot-2022-10-11-at-7.06.45-AM-p-1080.png 1080w, images/Screen-Shot-2022-10-11-at-7.06.45-AM-p-1600.png 1600w, images/Screen-Shot-2022-10-11-at-7.06.45-AM-p-2000.png 2000w, images/Screen-Shot-2022-10-11-at-7.06.45-AM.png 2070w" sizes="(max-width: 2555px) 81vw, 2070px" alt="Edge Topology" class="_50btm">
+          <div class="regulartext center">USE CASE AND BUSINESS NEED/GLOBALIZATION FUNCTION</div>
+          <div class="html2 w-embed w-iframe"><iframe src="https://www.npr.org/player/embed/297686724/297844034" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe></div>
+          <div class="section-bottom"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63021be5b0ee910c66f8f4b1" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
